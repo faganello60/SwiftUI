@@ -12,11 +12,21 @@ struct Category: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
     
-    init(value:String, position:Int) {
+    init(value:String, position: Int) {
         self.id = position
         self.name = value
     }
-
+    
+    func convertPNGIntoJPEG(_ png:FILE) {
+        
+    }
+    
+    typealias imagePNG = FILE
+    
+    func convertTOJPEG(_ image: imagePNG) {
+        
+    }
+    
 }
 
 

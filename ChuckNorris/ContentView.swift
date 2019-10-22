@@ -34,17 +34,21 @@ struct ContentView: View {
             Spacer()
             
             HStack {
-                Spacer()
                 
                 Button(action: {
                     
                 }, label: {
-                    Text("Tamo junto")
-                        .foregroundColor(Color.orange)
+                    Text("Começar")
+                        .foregroundColor(Color.white)
+                        .padding(.leading,70)
+                        .padding(.trailing,70)
+                        .frame(height:50)
+                        .background(Color.pink)
                 })
+                    
+                    
                 
-                Spacer()
-            }
+            }.padding(.bottom,10)
             
         }
     }
@@ -52,6 +56,9 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ForEach(["iPhone 8", "iPhone XS Max"], id: \.self) { deviceName in
+            ContentView()
+                .previewDevice(PreviewDevice(rawValue: deviceName))
+        }
     }
 }

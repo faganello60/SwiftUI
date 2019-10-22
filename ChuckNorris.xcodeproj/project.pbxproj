@@ -113,8 +113,8 @@
 		2B3014E5235F312A002AA52F /* ChuckNorris */ = {
 			isa = PBXGroup;
 			children = (
-				2B301524235F4809002AA52F /* AppStartup */,
 				2B30151A235F4451002AA52F /* categoryData.json */,
+				2B301524235F4809002AA52F /* AppStartup */,
 				2B301523235F4800002AA52F /* Model */,
 				2B301529235F6723002AA52F /* ListCategory */,
 				2B30151C235F4543002AA52F /* FirstView */,
