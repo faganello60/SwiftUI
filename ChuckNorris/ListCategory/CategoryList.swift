@@ -21,6 +21,7 @@ struct CategoryList: View {
                 }
             }
             .navigationBarTitle("Categories")
+            .accentColor(Color.orange)
         }
     }
 }

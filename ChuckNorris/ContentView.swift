@@ -8,9 +8,8 @@
 
 import SwiftUI
 
-
 struct ContentView: View {
-   @State var shouldShowView = false
+    @State var shouldShowView: Bool = false
     
     
     
@@ -56,9 +55,7 @@ struct ContentView: View {
                 }).sheet(isPresented: $shouldShowView) {
                     CategoryList()
                 }
-                    
-                    
-                
+
             }.padding(.bottom,10)
             
         }

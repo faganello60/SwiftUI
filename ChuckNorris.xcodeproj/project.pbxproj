@@ -22,6 +22,7 @@
 		2B301522235F47FD002AA52F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B301521235F47FD002AA52F /* Data.swift */; };
 		2B301526235F4BED002AA52F /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B301525235F4BED002AA52F /* CategoryList.swift */; };
 		2B301528235F4EA7002AA52F /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B301527235F4EA7002AA52F /* Category.swift */; };
+		2BE748182360E96600949574 /* JokeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE748172360E96600949574 /* JokeDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		2B301521235F47FD002AA52F /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		2B301525235F4BED002AA52F /* CategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryList.swift; sourceTree = "<group>"; };
 		2B301527235F4EA7002AA52F /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		2BE748172360E96600949574 /* JokeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				2B30151A235F4451002AA52F /* categoryData.json */,
+				2BE748172360E96600949574 /* JokeDetail.swift */,
 				2B301524235F4809002AA52F /* AppStartup */,
 				2B301523235F4800002AA52F /* Model */,
 				2B301529235F6723002AA52F /* ListCategory */,
@@ -324,6 +327,7 @@
 				2B3014E7235F312A002AA52F /* AppDelegate.swift in Sources */,
 				2B301517235F383B002AA52F /* CircleImage.swift in Sources */,
 				2B301519235F3AA1002AA52F /* MapView.swift in Sources */,
+				2BE748182360E96600949574 /* JokeDetail.swift in Sources */,
 				2B3014E9235F312A002AA52F /* SceneDelegate.swift in Sources */,
 				2B30151E235F4574002AA52F /* CategoryRow.swift in Sources */,
 				2B301528235F4EA7002AA52F /* Category.swift in Sources */,
