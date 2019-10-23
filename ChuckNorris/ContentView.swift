@@ -10,6 +10,10 @@ import SwiftUI
 
 
 struct ContentView: View {
+   @State var shouldShowView = false
+    
+    
+    
     var body: some View {
         VStack {
             MapView()
@@ -36,15 +40,22 @@ struct ContentView: View {
             HStack {
                 
                 Button(action: {
-                    
+                    self.shouldShowView = true
                 }, label: {
-                    Text("Começar")
-                        .foregroundColor(Color.white)
+                    
+                    HStack {
+                        Image(systemName: "e.circle.fill")
+                        Text("Começar")
+                        
+                    }.foregroundColor(Color.white)
                         .padding(.leading,70)
-                        .padding(.trailing,70)
-                        .frame(height:50)
-                        .background(Color.pink)
-                })
+                    .padding(.trailing,70)
+                    .frame(height:50)
+                    .background(Color.pink)
+                    
+                }).sheet(isPresented: $shouldShowView) {
+                    CategoryList()
+                }
                     
                     
                 
@@ -56,7 +67,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ForEach(["iPhone 8", "iPhone XS Max"], id: \.self) { deviceName in
+        ForEach(["iPhone 8","iPhone 8 Plus", "iPhone XS Max"], id: \.self) { deviceName in
             ContentView()
                 .previewDevice(PreviewDevice(rawValue: deviceName))
         }
