@@ -16,17 +16,6 @@ struct Category: Hashable, Codable, Identifiable {
         self.id = position
         self.name = value
     }
-    
-    func convertPNGIntoJPEG(_ png:FILE) {
-        
-    }
-    
-    typealias imagePNG = FILE
-    
-    func convertTOJPEG(_ image: imagePNG) {
-        
-    }
-    
 }
 
 
