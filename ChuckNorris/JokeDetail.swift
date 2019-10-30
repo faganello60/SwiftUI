@@ -44,9 +44,6 @@ struct JokeDetail: View {
                     .frame(height:50)
                     .background(Color(myOrange))
                     .cornerRadius(15)
-                    
-                    
-                
             })
                 .padding(.bottom,10)
         }.onAppear {
