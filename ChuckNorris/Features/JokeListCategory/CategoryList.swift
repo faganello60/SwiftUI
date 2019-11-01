@@ -9,12 +9,25 @@
 import SwiftUI
 
 struct CategoryList: View {
+    
+    //--------------------------------------------------
+    // MARK: - Public Properties
+    //--------------------------------------------------
+    
     @ObservedObject var viewModel = CategoryListViewModel()
+    
+    //--------------------------------------------------
+    // MARK: - Inits
+    //--------------------------------------------------
     
     init() {
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.red]
-        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.blue]
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.red]
     }
+    
+    //--------------------------------------------------
+    // MARK: - Body
+    //--------------------------------------------------
     
     var body: some View {
         NavigationView{
@@ -42,6 +55,11 @@ struct CategoryList: View {
         }
     }
 }
+
+
+//--------------------------------------------------
+// MARK: - Debug
+//--------------------------------------------------
 
 struct CategoryList_Previews: PreviewProvider {
     static var previews: some View {

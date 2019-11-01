@@ -16,6 +16,7 @@ class JokeDetailViewModel: ObservableObject {
     //--------------------------------------------------
     
     @Published var jokeDetail:Detail? = nil
+
     
     //--------------------------------------------------
     // MARK: - Private Properties
@@ -37,6 +38,7 @@ class JokeDetailViewModel: ObservableObject {
     
     
     func load() {
+        jokeDetail = nil
         guard let url = URL(string: "https://api.chucknorris.io/jokes/random?category=\(category.name)") else { return }
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             do {
